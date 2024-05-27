@@ -238,6 +238,39 @@ public IActionResult ViewMealPlanDetails(int mealPlanId)
     return View();
    
 }
-
+[Route("mealplans/delete/{mealPlanId:int}")]
+public IActionResult DeleteMealPlan(int mealPlanId)
+{
+    if (string.IsNullOrEmpty(HttpContext.Session.GetString("username")))
+    {
+        return RedirectToAction("Login", "User");
     }
+
+    SetViewDataFromSession();
+
+    MealPlanModel mealPlan = _db.MealPlans.FirstOrDefault(r => r.Id == mealPlanId);
+    if (mealPlan == null)
+    {
+        return RedirectToAction("MealPlans");
+    }
+
+   
+
+    try
+    {
+        _db.MealPlans.Remove(mealPlan);
+        _db.SaveChanges();
+
+        ViewData["DeleteMealPlanMessage"] = "Recipe deleted successfully";
+    }
+    catch (Exception ex)
+    {
+        ViewData["DeleteMealPlanMessage"] = "Error deleting recipe: " + ex.Message;
+    }
+
+    return RedirectToAction("MealPlans");
+        }
+    }
+
+
 }
