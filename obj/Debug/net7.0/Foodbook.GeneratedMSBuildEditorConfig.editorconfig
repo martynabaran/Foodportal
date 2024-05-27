@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Foodbook
+build_property.RootNamespace = Foodbook
+build_property.ProjectDir = C:\Users\Użytkownik\Desktop\sem 4\pz2\MVC-Foodbook\Foodbook\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Użytkownik\Desktop\sem 4\pz2\MVC-Foodbook\Foodbook
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Foodbook/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZGJvb2tcQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Foodbook/HighestScore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZGJvb2tcSGlnaGVzdFNjb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Foodbook/RateRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZGJvb2tcUmF0ZVJlY2lwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/MealPlan/AddItemToMealPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbFBsYW5cQWRkSXRlbVRvTWVhbFBsYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/MealPlan/CreateMealPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbFBsYW5cQ3JlYXRlTWVhbFBsYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/MealPlan/MealPlans.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbFBsYW5cTWVhbFBsYW5zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/MealPlan/ViewMealPlanDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbFBsYW5cVmlld01lYWxQbGFuRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Recipe/AddRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXEFkZFJlY2lwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Recipe/EditRecipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXEVkaXRSZWNpcGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Recipe/ListMyRecipes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXExpc3RNeVJlY2lwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Recipe/ListRecipes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXExpc3RSZWNpcGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Recipe/ViewRecipeDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlXFZpZXdSZWNpcGVEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/User/ManageUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNYW5hZ2VVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Użytkownik/Desktop/sem 4/pz2/MVC-Foodbook/Foodbook/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ri8cizejns
