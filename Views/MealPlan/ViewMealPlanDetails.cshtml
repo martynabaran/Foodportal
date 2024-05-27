@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+@using Foodbook.Controllers
+
+@if (ViewData["Username"] is null || ((String ?) ViewData["Username"]) == "") {
+    <h1 class="text-center">Please log in to continue</h1>
+} else {
+    <h1 class="text-center">Welcome, @ViewData["Username"]!</h1>
+    <h2 class="text-center">Meal Plan Details</h2>
+
+    <table class="text-center pure-table">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Day of Week</th>
+        </tr>
+        </thead>
+        <tbody>
+        @if (ViewData["MealPlanItems"] is not null) {
+            @foreach (MealPlanItemDisplayElement item in (ViewData["MealPlanItems"] as MealPlanItemDisplayElement[])) {
+                <tr>
+                    <th>@item.Title</th>
+                    <th>@item.Category</th>
+                    <th>@item.Day</th>
+                    <br/>
+                </tr>
+                }
+            }
+         else {
+            <tr>
+                <td colspan="7">No recipes found for this plan.</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

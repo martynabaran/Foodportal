@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+@using Foodbook.Controllers
+
+@if (ViewData["Username"] is null || ((String ?) ViewData["Username"]) == "") {
+    <h1 class="text-center">Please log in to continue</h1>
+} else {
+    <h1 class="text-center">Welcome, @ViewData["Username"]!</h1>
+    <h2 class="text-center">All recipes</h2>
+    <a class="nav-link text-dark" href="/Foodbook/topsearch" >
+                            Highest Score
+                        </a>
+    <table class="text-center pure-table">
+        <thead>
+        <tr>
+            @* <th>RecipeId</th> *@
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Description</th>
+            @* <th>Ingridients</th> *@
+            @* <th>Instuction</th> *@
+            <th>Average Rate</th>
+            <th>Publication date</th>
+            <br/>
+        </tr>
+        </thead>
+        <tbody>
+        @if (ViewData["Recipes"] is not null) {
+            @foreach (RecipeDisplayElement item in (ViewData["Recipes"] as RecipeDisplayElement[])) {
+                <tr>
+                    @* <th>@item.BookId</th> *@
+                    <th>@item.Title</th>
+                    <th>@item.AuthorName</th>
+                    <th>@item.Category</th>
+                    <th>@item.Description</th>
+                    @* <th>@item.Ingridients</th> *@
+                    @* <th>@item.Instructions</th> *@
+                    <th>@item.Rate</th>
+                    <th>@item.publishingDate.ToString("yyyy-MM-dd")</th>
+                     <th>
+                        <a class="nav-link text-dark" href="/Recipe/viewrecipedetails/@item.RecipeId" >
+                            Edit
+                        </a>
+                    </th>
+                    <th>
+                        <a class="nav-link text-dark" href="/Foodbook/raterecipe/@item.RecipeId" >
+                            Rate
+                        </a>
+                    </th>
+                    <br/>
+                </tr>
+                }
+            }
+         @* @else {
+            <tr>
+                <td colspan="7">No recipes found.</td>
+            </tr>
+        } *@
+        </tbody>
+    </table>
+}
