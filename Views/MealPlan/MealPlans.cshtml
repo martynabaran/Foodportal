@@ -1,0 +1,47 @@
+@model IEnumerable<Foodbook.Models.MealPlanModel>
+@using Foodbook.Controllers
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+@if (ViewData["Username"] is null || string.IsNullOrEmpty(ViewData["Username"].ToString()))
+{
+    <h1 class="text-center">Please log in to continue</h1>
+}
+else
+{
+    <h1>Meal Plans</h1>
+
+    <a href="@Url.Action("CreateMealPlan", "MealPlan")" class="pure-button pure-button-primary">Create New Meal Plan</a>
+
+    @if (!Model.Any())
+    {
+        <p>No meal plans found. Create a new meal plan to get started.</p>
+    }
+    else
+    {
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>Owner</th>
+                    <th>Week Start Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var mealPlan in Model)
+                {
+                    <tr>
+                        <td>@mealPlan.UserId</td>
+                        <td>@mealPlan.WeekStartDate.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            <a href="@Url.Action("AddItemtoMealPlan", "MealPlan", new { mealPlanId = mealPlan.Id })" class="pure-button pure-button-primary">Add</a>
+                            @* <a href="@Url.Action("DeleteMealPlan", "Foodbook", new { mealPlanId = mealPlan.Id })" class="pure-button pure-button-primary">Delete</a> *@
+                            <a href="@Url.Action("ViewMealPlanDetails", "MealPlan", new { mealPlanId = mealPlan.Id })" class="pure-button pure-button-primary">View Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+                
+    }
+}

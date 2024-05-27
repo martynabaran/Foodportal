@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+@using Foodbook.Controllers
+
+@if (ViewData["Username"] is null || ((string?)ViewData["Username"]) == "") {
+    <h1 class="text-center">Please log in to continue</h1>
+} else {
+    <div class="pure-g">
+        <div class="pure-u-1-1 text-center">
+            <h1>Recipe Details</h1>
+
+            @if (ViewData["RecipeDetails"] is RecipeDisplayElement recipe) {
+                <div style="margin: 20px auto; max-width: 600px; text-align: left;">
+                    <!-- Title -->
+                    <div style="text-align: center;">
+                        <h2>@recipe.Title</h2>
+                    </div>
+                    
+                    <!-- Description Section -->
+                    <div style="margin-top: 20px;">
+                        <h3>Description</h3>
+                        <p>@recipe.Description</p>
+                    </div>
+                    
+                    <!-- Ingredients Section -->
+                    <div style="margin-top: 20px;">
+                        <h3>Ingredients</h3>
+                        <p>@recipe.Ingridients</p>
+                    </div>
+                    
+                    <!-- Instructions Section -->
+                    <div style="margin-top: 20px;">
+                        <h3>Instructions</h3>
+                        <p>@recipe.Instructions</p>
+                    </div>
+                </div>
+            } else {
+                <p class="text-center">Recipe details not found.</p>
+            }
+        </div>
+    </div>
+}

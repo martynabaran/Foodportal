@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+@if (ViewData["Username"] is null || ((String ?) ViewData["Username"]) == "") {
+    <h1 class="text-center">Please log in to continue</h1>
+} else {
+    <h1 class="text-center">Welcome, @ViewData["Username"]!</h1>
+    <h2 class="text-center">Add new recipe</h2>
+
+    <form class="pure-form" method="post">
+        <select name="rate" class="form-control">
+           @for (int i = 1; i <= 5; i++) {
+                <option value="@i">@i</option>
+            }
+        </select><br/>
+        <input type="text" name="comment" placeholder="Comment" class="form-control" />
+        
+        <br/><input type="submit" value="Add" class="pure-button pure-button-primary" />
+    </form>
+}
+
+<h2 class="text-center">@ViewData["RateRecipeMessage"]</h2>
