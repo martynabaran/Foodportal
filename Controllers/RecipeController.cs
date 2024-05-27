@@ -307,6 +307,44 @@ public IActionResult EditRecipe(int recipeId, IFormCollection form) {
         return View();
     }
 }
+
+[Route("deleterecipe/{recipeId:int}")]
+public IActionResult DeleteRecipe(int recipeId)
+{
+    if (string.IsNullOrEmpty(HttpContext.Session.GetString("username")))
+    {
+        return RedirectToAction("Login", "User");
+    }
+
+    SetViewDataFromSession();
+
+    RecipeModel recipe = _db.Recipes.FirstOrDefault(r => r.RecipeId == recipeId);
+    if (recipe == null)
+    {
+        return RedirectToAction("ListMyRecipes");
+    }
+
+    // Sprawdź, czy przepis należy do zalogowanego użytkownika
+    var username = HttpContext.Session.GetString("username");
+    if (recipe.userName != username)
+    {
+        return RedirectToAction("ListMyRecipes");
+    }
+
+    try
+    {
+        _db.Recipes.Remove(recipe);
+        _db.SaveChanges();
+
+        ViewData["DeleteRecipeMessage"] = "Recipe deleted successfully";
+    }
+    catch (Exception ex)
+    {
+        ViewData["DeleteRecipeMessage"] = "Error deleting recipe: " + ex.Message;
+    }
+
+    return RedirectToAction("ListMyRecipes");
+}
     }
     
     }
