@@ -6,12 +6,12 @@ Projekt Food Portal to aplikacja internetowa stworzona w ASP.NET Core MVC, któr
 Sklonuj repozytorium na swój lokalny komputer:
 ```
 git clone [adres-repozytorium]
-``
+```
 Otwórz repozytorium w wybranym edytorze kodu (Visual Studio, Visual Studio Code).
 Następnie do terminala wpisz następujące polecenia, aby przejść do docelowego folderu:
-``
+```
 cd [path to directory]
-``
+```
 Uruchom aplikację:
 ```
 dotnet run
